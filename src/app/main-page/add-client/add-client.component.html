@@ -1,0 +1,37 @@
+<form (submit)="onSubmit()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input
+      type="text"
+      name="name"
+      class="form-control"
+      id="name"
+      aria-describedby="emailHelp"
+      [(ngModel)]="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Type</label>
+    <input
+      type="text"
+      name="type"
+      class="form-control"
+      id="type"
+      aria-describedby="emailHelp"
+      [(ngModel)]="type"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Contact#</label>
+    <input
+      type="text"
+      name="phone"
+      class="form-control"
+      id="phone"
+      aria-describedby="emailHelp"
+      [(ngModel)]="phone"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

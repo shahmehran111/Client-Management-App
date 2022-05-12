@@ -1,23 +1,40 @@
 <div class="text-center">
-    <h6 >List of clients</h6>
+  <h6>List of clients</h6>
 </div>
 <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let clients of client">
-        <th scope="row">{{clients.serialnumber}}</th>
-        <td>{{clients.clientName}}</td>
-        <td>{{clients.type}}</td>
-        <td>{{clients.phoneNum}}</td>
-        <td><button class="btn btn-primary" (click)="onView(clients)">view</button></td>
-        <td><button class="btn btn-danger" (click)="onDelete(clients)">delete</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let clients of client">
+      <th scope="row">{{ clients.serialnumber }}</th>
+      <td>{{ clients.clientName }}</td>
+      <td>{{ clients.type }}</td>
+      <td>{{ clients.phoneNum }}</td>
+      <td>
+        <a>
+          <button class="btn btn-primary" (click)="onView(clients)">
+            view
+          </button>
+        </a>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="onDelete(clients)">
+          delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <tr>
+  <th scope="row">{{ addNewClient.serialnumber }}</th>
+  <td>{{ addNewClient.clientName }}</td>
+  <td>{{ addNewClient.type }}</td>
+  <td>{{ addNewClient.phoneNum }}</td>
+</tr> -->

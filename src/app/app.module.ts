@@ -7,6 +7,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { ViewClientsComponent } from './main-page/view-clients/view-clients.component';
 import { HeaderComponent } from './header/header.component';
 import { ClientDetailComponent } from './main-page/client-detail/client-detail.component';
+import { AddClientComponent } from './main-page/add-client/add-client.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ClientDetailComponent } from './main-page/client-detail/client-detail.c
     MainPageComponent,
     ViewClientsComponent,
     HeaderComponent,
-    ClientDetailComponent
+    ClientDetailComponent,
+    AddClientComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
